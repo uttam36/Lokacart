@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#66bb6a</color>
+    <color name="colorPrimaryDark">#4caf50</color>
+    <color name="colorAccent">#64dd17</color>
+
+    <color name="buttonTextColorBlue">@color/colorAccent</color>
+    <color name="buttonTextColorWhite">#ffffff</color>
+
+    <color name="buttonBackgroundGreen">@color/colorAccent</color>
+    <color name="buttonBackgroundWhite">#ffffff</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="gray">#9078909C</color>
+    <color name="light_gray">#20000000</color>
+    <color name="gray2">#726969</color>
+    <color name="text_grey">#616161</color>
+
+    <color name="mediaButtons">@color/colorAccent</color>
+    <color name="mediaButtonsGrayed">@color/gray</color>
+
+    <color name="stepper_a_bg">#ffd180</color>
+    <color name="stepper_a_font">#69972e</color>
+    <color name="stepper_a_font2">#ff5f0f</color>
+
+    <color name="stepper_b_bg">#8bd0cd</color>
+    <color name="stepper_b_font">#00746b</color>
+    <color name="stepper_b_font2">#09547b</color>
+
+    <color name="stepper_c_bg">#fff568</color>
+    <color name="stepper_c_font">#ff7a01</color>
+    <color name="stepper_c_font2">#b15900</color>
+
+    <color name="profile_tick">#78909c</color>
+
+    <color name="cart_primary">#81c784</color>
+    <color name="cart_primary_dark">#4caf50</color>
+    <color name="cart_accent">#64dd17</color>
+    <color name="no_internet_yellow">#F8A822</color>
+
+    <color name="colorPrimaryQuarter">#3303A9F4</color>
+    <color name="colorPrimaryHalf">#9003A9F4</color>
+    <color name="colorControlNormalHalf">#9078909C</color>
+    <color name="colorControlActivatedHalf">#9003A9F4</color>
+    <color name="colorAccentQuarter">#3300E5FF</color>
+    <color name="colorAccentHalf">#9000E5FF</color>
+
+    <array name="progress_colors_light">
+        <item>#FF03A9F4</item>
+        <item>#FFD8433C</item>
+        <item>#FFF2AF3A</item>
+        <item>#FF279B5E</item>
+    </array>
+
+    <array name="progress_colors_dark">
+        <item>#FF00E5FF</item>
+        <item>#ffd81d5a</item>
+        <item>#fff27512</item>
+        <item>#ff63bc34</item>
+    </array>
+
+    <array name="in_colors_light">
+        <item>#4B03A9F4</item>
+        <item>#3303A9F4</item>
+        <item>#1903A9F4</item>
+    </array>
+
+    <array name="in_colors_dark">
+        <item>#4B00E5FF</item>
+        <item>#3300E5FF</item>
+        <item>#1900E5FF</item>
+    </array>
+
+    <color name="colorControlNormal">#FF78909C</color>
+    <color name="colorSwitchThumbNormal">#FF78909C</color>
+
+</resources>

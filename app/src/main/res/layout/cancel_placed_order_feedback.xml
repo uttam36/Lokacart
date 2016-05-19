@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/cancel_order_feedback">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/label_cancelorder_feedback_header"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#e114a0cd"
+        android:textStyle="bold"
+        />
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:cacheColorHint="#f8f8ff"
+        android:divider="#000000"
+        android:fadeScrollbars="true"
+        android:choiceMode="singleChoice"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="true"
+        android:textFilterEnabled="true"
+        android:textStyle="normal" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/hint_cancelorder_feedback_other_options"
+        android:id="@+id/comments"
+        android:visibility="gone"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        />
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Ok"
+            android:id="@+id/feedbackOk"
+            android:onClick="feedbackOk"
+            android:background="#e114a0cd"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            />
+
+        <Button  android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Close"
+            android:id="@+id/feedbackClose"
+            android:onClick="feedbackClose"
+            android:background="#e114a0cd"
+            />
+    </LinearLayout>-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        />
+
+</LinearLayout>

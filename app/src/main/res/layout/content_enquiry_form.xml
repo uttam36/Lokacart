@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mobile.ict.cart.activity.EnquiryFormActivity"
+    android:background="@drawable/border_curved"
+    android:layout_margin="5dp"
+    tools:showIn="@layout/activity_enquiry_form">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_name"
+        android:id="@+id/tvName"
+        android:textSize="@dimen/enquiry_form_font_size"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eEnquiryName"
+        android:textCursorDrawable="@null"
+        android:layout_below="@+id/tvName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_email"
+        android:id="@+id/tvEmail"
+        android:layout_below="@id/eEnquiryName"
+        android:textSize="@dimen/enquiry_form_font_size"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eEnquiryEmail"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:textCursorDrawable="@null"
+        android:layout_below="@+id/tvEmail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_mobile_number"
+        android:id="@+id/tvMobileNumber"
+        android:layout_below="@id/eEnquiryEmail"
+        android:textSize="@dimen/enquiry_form_font_size"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="10"
+        android:ems="10"
+        android:id="@+id/eEnquiryMobileNumber"
+        android:layout_below="@+id/tvMobileNumber"
+        android:textCursorDrawable="@null"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_enquiry_message"
+        android:id="@+id/tvEnquiryMessage"
+        android:layout_below="@id/eEnquiryMobileNumber"
+        android:textSize="@dimen/enquiry_form_font_size"/>
+
+    <EditText
+        android:id="@+id/eEnquiryMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEnquiryMessage"
+        android:textCursorDrawable="@null"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:maxLines="4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/eEnquiryMessage">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:id="@+id/bEnquirySave"
+            android:layout_marginTop="10dp"
+            android:text="@string/button_save"
+            android:textSize="25sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/buttonTextColorWhite"
+            android:background="@drawable/roundebutton"
+            />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:id="@+id/bEnquiryCancel"
+            android:layout_marginTop="10dp"
+            android:text="@string/button_cancel"
+            android:textSize="25sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/buttonTextColorWhite"
+            android:background="@drawable/roundebutton"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

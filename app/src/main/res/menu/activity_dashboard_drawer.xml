@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_products"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_products" />
+
+        <!--<item android:title="Orders">
+            <menu >
+                <item
+                    android:id="@+id/menu_placed_orders"
+                    android:title="@string/menu_placed_orders"/>
+                <item
+                    android:id="@+id/menu_processed_orders"
+                    android:title="@string/menu_processed_orders"/>
+            </menu>
+        </item>-->
+
+        <item
+            android:id="@+id/menu_placed_orders"
+            android:title="@string/menu_placed_orders"/>
+        <item
+            android:id="@+id/menu_processed_orders"
+            android:title="@string/menu_processed_orders"/>
+
+        <!--<item android:title="General">
+            <menu>
+                <item
+                    android:id="@+id/menu_profile"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="@string/menu_profile" />
+                <item
+                    android:id="@+id/menu_referral"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="@string/menu_referrals" />
+                <item
+                    android:id="@+id/menu_change_organisation"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_change_organisation" />
+                <item
+                    android:id="@+id/menu_logout"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/menu_logout" />
+            </menu>
+        </item>-->
+
+        <item
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/menu_referral"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_referrals" />
+        <item
+            android:id="@+id/menu_change_organisation"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_change_organisation" />
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_logout" />
+
+        <!--<item android:title="Others">
+            <menu>
+                <item
+                    android:id="@+id/menu_feedback"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="@string/menu_feedback" />
+                <item
+                    android:id="@+id/menu_contact_us"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/menu_contact_us" />
+                <item
+                    android:id="@+id/menu_terms_and_conditions"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/menu_terms_and_conditions" />
+                <item
+                    android:id="@+id/menu_faq"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/menu_faqs" />
+            </menu>
+        </item>-->
+
+        <item
+            android:id="@+id/menu_feedback"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_feedback" />
+        <item
+            android:id="@+id/menu_contact_us"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_contact_us" />
+        <item
+            android:id="@+id/menu_terms_and_conditions"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_terms_and_conditions" />
+        <item
+            android:id="@+id/menu_faq"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_faqs" />
+    </group>
+
+</menu>

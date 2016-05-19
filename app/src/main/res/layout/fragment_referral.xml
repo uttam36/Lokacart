@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tOrganisationZero"
+        android:text="@string/textview_currently_you_are_part_of_zero_organisations"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bSendReferral"
+        android:background="@color/buttonBackgroundGreen"
+        android:textColor="@color/buttonTextColorWhite"
+        android:fontFamily="sans-serif"
+        android:layout_margin="1dp"
+        android:textSize="20sp"
+        android:text="@string/button_send_referral"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLinearLayout"
+        android:gravity="bottom"
+        android:layout_above="@id/bSendReferral"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/eReferralMobileNumber"
+                android:inputType="number"
+                android:hint="@string/hint_mobile_number"
+                android:maxLength="10"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/eReferralEmail"
+                android:inputType="textEmailAddress"
+                android:hint="@string/hint_email_id"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/referralRecyclerView"
+        android:layout_above="@id/textLinearLayout"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+
+    </RelativeLayout>
+

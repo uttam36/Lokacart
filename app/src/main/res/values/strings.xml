@@ -1,0 +1,201 @@
+<resources>
+    <string name="feedbacktvtext">Your feedback means a great deal to us and will help us improve the product experience</string>
+    <string name="FAQ_string"><u>FAQ</u></string>
+    <string name="about_us">Cart App will let you buy your choice of vegetables from NGO\'s while ensuring quality product and delivery</string>
+    <string name="app_name">Lokacart</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_enquiry_form">Enquiry form</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_fragment_product">Products</string>
+    <string name="title_fragment_placed_order">Placed orders</string>
+    <string name="title_fragment_processed_order">Processed orders</string>
+    <string name="title_fragment_profile">Profile</string>
+    <string name="title_fragment_referral">Referral</string>
+    <string name="title_fragment_change_organisation">Organisations</string>
+    <string name="title_fragment_feedback">Feedback</string>
+    <string name="title_fragment_contact_us">Contact Us</string>
+    <string name="title_fragment_terms_and_conditions">Terms and conditions</string>
+    <string name="title_fragment_faq">FAQs</string>
+    <string name="title_fragment_about_us">About Us</string>
+    <string name="title_dialog_change_password">Change password</string>
+    <string name="title_dialog_change_mobile_number">Change mobile number</string>
+
+    <string name="textview_welcome_log_in">Welcome, Please Login</string>
+    <string name="textview_contact_us">Talk to us</string>
+    <string name="textview_cant_access_your_account">Cannot access your account?</string>
+    <string name="textview_name">Name*:</string>
+    <string name="textview_mobile_number">Mobile number:</string>
+    <string name="textview_email">Email*:</string>
+    <string name="textview_enquiry_message">Enquiry message*:</string>
+    <string name="textview_currently_you_are_part_of_zero_organisations">Currently you are part of zero organisations</string>
+    <string name="textview_out_of_stock">Out of Stock</string>
+    <string name="textview_available">AVAILABLE</string>
+    <string name="textview_enter_otp_received">Please enter the One time password which you have received through SMS</string>
+
+    <string name="hint_email_id">Email ID</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_mobile_number">Mobile number</string>
+    <string name="hint_new_mobile_number">New Mobile number</string>
+    <string name="hint_enter_otp_received">OTP received</string>
+    <string name="hint_enter_new_password">New password</string>
+    <string name="hint_reenter_new_password">Confirm new password</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_pincode">Pincode</string>
+    <string name="hint_current_password">Current password</string>
+    <string name="hint_new_password">New password</string>
+    <string name="hint_confirm_new_password">Confirm new password</string>
+
+    <string name="button_signin">Sign In</string>
+    <string name="button_sign_in">Sign In</string>
+    <string name="button_get_OTP">Get OTP</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_save">Save</string>
+    <string name="button_change_password">Change Password</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_change_organisation">Change Organisation</string>
+    <string name="button_Leave_organisation">Leave Organisation</string>
+    <string name="button_send_referral">Send Referral</string>
+
+    <string name="checkbox_keep_me_signed_in">Keep me signed in</string>
+
+    <string name="pd_please_wait">Please wait</string>
+    <string name="pd_logging_you_in">Logging you in</string>
+    <string name="pd_sending_data_to_server">Sending data to server</string>
+    <string name="pd_fetching_data_from_server">Fetching data from server</string>
+    <string name="pd_terminating_your_membership">Terminating your membership</string>
+    <string name="pd_fetching_products">Fetching products from the server</string>
+    <string name="pd_verifying_cart_details">Verifying cart details</string>
+    <string name="pd_could_not_fetch_update_product_prices">Could not fetch latest prices from server. Please try again.</string>
+
+    <string name="dialog_member_verification">Member verification</string>
+    <string name="dialog_set_new_password">Set new password</string>
+
+    <string name="alert_cannot_connect_to_the_server">Cannot connect to server</string>
+    <string name="alert_something_went_wrong">Something went wrong, please Login again and try</string>
+    <string name="alert_Do_you_want_terminate_this_organization_memebership">Do you want terminate this organization\'s membership ?</string>
+    <string name="alert_Do_you_want_to_refer_the_person">Do you want to refer the person with entered mobile number for the selected organisation\?</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="toast_You_are_not_a_registered_member">You are not a registered member</string>
+    <string name="toast_incorrect_password">Incorrect password</string>
+    <string name="toast_OTP_sent_through_sms">OTP sent through SMS</string>
+    <string name="toast_otp_expired">OTP expired</string>
+    <string name="toast_Password_successfully_changed">Password updated successfully</string>
+    <string name="toast_Please_enter_mobile_number">Please enter mobile number</string>
+    <string name="toast_Please_check_internet_connection">Please check your internet connection</string>
+    <string name="toast_Please_enter_correct_OTP">Please enter correct OTP</string>
+    <string name="toast_Please_enter_password">Please enter password</string>
+    <string name="toast_Passwords_do_not_match">Passwords do not match</string>
+    <string name="toast_Please_enter_a_mobile_number_and_a_password">Please enter mobile number and password</string>
+    <string name="toast_enter_valid_number">Please enter a valid 10 digit mobile number</string>
+    <string name="toast_please_fill_all_the_details">Please fill all the details</string>
+    <string name="toast_please_enter_a_valid_six_digit_pincode">Please enter a valid 6 digit pincode</string>
+    <string name="toast_please_enter_name">Please enter name</string>
+    <string name="toast_please_enter_email">Please enter email</string>
+    <string name="toast_please_enter_message">Please enter the message</string>
+    <string name="toast_the_enquiry_has_been_submitted">The enquiry has been recorded. Our team will reply to this on your email ID as soon as possible.</string>
+    <string name="toast_we_are_facing_some_technical_problems">We are facing some technical problems with the server. Please try later.</string>
+    <string name="toast_unable_to_record_your_enquiry">Sorry, we were unable to record your enquiry. Please try again.</string>
+    <string name="toast_profile_details_updated_successfully">Profile details have been updated successfully</string>
+    <string name="toast_no_changes_to_save">No changes to save</string>
+    <string name="toast_current_pass_and_new_pass_cannot_be_same">Current password and new password cannot be same</string>
+    <string name="toast_all_fileds_are_mandatory">All fields are mandatory</string>
+    <string name="toast_wrong_current_password_entered">Wrong current password entered</string>
+    <string name="toast_text_in_new_password_and_confirm_new_password_do_not_match">Text in new password and confirm new password do not match</string>
+    <string name="toast_OTP_has_sent_to_your_mobile_sms">OTP has been sent to your mobile number</string>
+    <string name="toast_validation_Mobile_Number_exists">Mobile number already exists</string>
+    <string name="toast_You_are_already_registered_user">You are already registered user</string>
+    <string name="toast_Sorry_your_OTP_expires_._Try_to_get_new_OTP">Sorry,your OTP expires.Try to get new OTP</string>
+    <string name="toast_Mobile_Number_does_not_exists">Mobile number does not exists</string>
+    <string name="toast_Your_mobile_number_upadted_successfully">Your contact number updated successfully</string>
+    <string name="toast_organisation_changed_successfully">Organisation changed successfully</string>
+    <string name="toast_Membership_terminated_successfully">Membership terminated successfully</string>
+    <string name="toast_Membership_cannot_be_terminated">Membership cannot be terminated as you have one or more pending orders on this organisation</string>
+    <string name="toast_already_a_member">The person whom you are referring is already a member of the selected organisation</string>
+    <string name="toast_member_referred_successfully">Member referred successfully</string>
+    <string name="toast_audio_not_available_for_this_product">Audio not available for this product</string>
+    <string name="toast_product_added_to_cart"> has been added to cart</string>
+
+    <string name="error_required">Required</string>
+
+    <string name="snackbar_press_back_once_more_to_exit">Press back once more to exit</string>
+
+
+    <string name="menu_products">Products</string>
+    <string name="menu_orders">Orders</string>
+    <string name="menu_placed_orders">Placed orders</string>
+    <string name="menu_processed_orders">Processed orders</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_change_organisation">Organisation</string>
+    <string name="menu_referrals">Referrals</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_terms_and_conditions">Terms and conditions</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_about_us">About us</string>
+    <string name="menu_feedback">Feedbacks</string>
+    <string name="menu_faqs">FAQs</string>
+    <string name="menu_help">Help</string>
+    <string name="title_activity_product_detail">ProductDetail</string>
+    <string name="title_activity_cart">Cart</string>
+
+    <string name="stepper_1">Get access to all farm products\nranging from vegetables to clothing</string>
+    <string name="stepper_2">Place an order in a touch</string>
+    <string name="stepper_3">Pay when goods are delivered</string>
+
+    <string name="label_activity_ordersubmit_message1">Order Placed!</string>
+    <string name="label_activity_ordersubmit_message2">Thank you for choosing Cart</string>
+    <string name="label_activity_ordersubmit_btn_done">Done</string>
+    <string name="label_activity_ordersubmit_orderid">Your Order ID</string>
+    <string name="label_toast_sorry_we_are_unable_to_process_order_items">Sorry we are unable to process your order items </string>
+    <string name="label_toast_Sorry_we_were_unable_to_process_your_request_Please_try_again_later">Sorry, we were unable to process your request.Please try again later</string>
+    <string name="label_toast_out_of_stock">- OUT OF STOCK !!</string>
+
+    <string name="alert_whoops">WHOOOOPS!!!</string>
+    <string name="alert_no_internet_connection_found">No internet connection found!\nCheck your connection or try again later!!</string>
+    <string name="alert_your_cart_is_empty">Your cart is empty!</string>
+    <string name="alert_oops_no_items_in_cart">Oops!! You have no items in cart.Please add items.</string>
+    <string name="alert_do_you_really_want_to_remove">Do you really remove this product \?</string>
+    <string name="alert_please_insert_quantity">Please insert product quantity greater than zero</string>
+    <string name="alert_server_facing_problems">Our server is some problems sending data. Please try later.</string>
+    <string name="alert_no_products">There are no products by this organisation</string>
+    <string name="alert_no_data_from_server">Could not get data from the server. Please try again.</string>
+    <string name="alert_no_more_stock_available">No more stock available</string>
+
+    <string name="alert_No_Cancel_Orders_Found">No Placed Orders Found!!</string>
+    <string name="pd_fetching_orders">Fetching orders from the server</string>
+
+    <string name="label_toast_Your_order_has_been_cancelled_successfully">Your order has been cancelled successfully</string>
+    <string name="label_cancelorder_feedback_header">Cancellation feedback form</string>
+    <string name="hint_cancelorder_feedback_other_options">Comments</string>
+    <string name="label_toast_cancel_order_feedback_form">Please fill feedback form</string>
+    <string name="label_cancelorder_feedback_form_option1">Not interested any more</string>
+    <string name="label_cancelorder_feedback_form_option2">Order delivery delayed</string>
+    <string name="label_cancelorder_feedback_form_option3">Ordered duplicate items by mistake</string>
+    <string name="label_cancelorder_feedback_form_option4">Purchased wrong item</string>
+    <string name="label_cancelorder_feedback_form_option5">Other reasons</string>
+    <string name="label_validation_required">required</string>
+
+
+    <string name="desc_apple">The apple tree \(Malus domestica\) is a deciduous tree in the rose family best known for
+        its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely
+        grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor,
+        Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe,
+        and were brought to North America by European colonists. Apples have religious and mythological significance
+        in many cultures, including Norse, Greek and European Christian traditions.Apple trees are large if grown
+        from seed, but small if grafted onto roots \(rootstock\). There are more than 7,500 known cultivars of apples,
+        resulting in a range of desired characteristics. Different cultivars are bred for various tastes and uses,
+        including cooking, eating raw and cider production. Apples are generally propagated by grafting, although wild
+        apples grow readily from seed. Trees and fruit are prone to a number of fungal, bacterial and pest problems,
+        which can be controlled by a number of organic and non-organic means. In 2010, the fruit\'s genome was decoded
+        as part of research on disease control and selective breeding in apple production.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

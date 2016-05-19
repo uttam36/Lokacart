@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.ProductDetailActivity">
+
+   &lt;!&ndash; <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/productDetailAppBar"
+        android:background="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+&ndash;&gt;
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@null"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    <include layout="@layout/content_product_detail" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>-->
+
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/detailsCoordinatorLayout"
+    tools:context=".activity.ProductDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_parent_view"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/imgFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                />
+
+            <TextView
+                android:id="@+id/tProductName"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Name"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/gray"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom|center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:minLines="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+
+        </FrameLayout>
+
+        <!--<include layout="@layout/content_product_detail" />-->
+        <include layout="@layout/content_product_detail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/imgFrameLayout"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/ivProduct"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@mipmap/addtocart_white"
+        />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@color/light_gray"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

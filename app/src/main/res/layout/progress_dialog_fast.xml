@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.rey.material.widget.ProgressView
+        android:layout_margin="10dp"
+        android:layout_height="4dp"
+        android:layout_width="match_parent"
+        app:pv_autostart="true"
+        app:pv_circular="false"
+        app:pv_progressStyle="@style/LightColorLinearProgressView"
+        app:pv_progressMode="indeterminate"/>
+
+<!--    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_linear"
+        app:pv_autostart="true"
+        app:pv_circular="false"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        app:pv_progressStyle="@style/LightLinearProgressDrawable"/>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_linear_colors"
+        android:layout_margin="10dp"
+        app:pv_autostart="true"
+        app:pv_circular="false"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        app:pv_progressStyle="@style/LightDeterminateLinearProgressDrawable"/>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_linear_determinate"
+        app:pv_autostart="true"
+        app:pv_circular="false"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        app:pv_progressStyle="@style/LightBufferLinearProgressDrawable"/>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_linear_query"
+        app:pv_autostart="true"
+        app:pv_circular="false"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        app:pv_progressStyle="@style/LightColorLinearProgressView"/>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_linear_buffer"
+        app:pv_autostart="true"
+        app:pv_circular="false"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        app:pv_progressStyle="@style/LightDeterminateLinearProgressView"/>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_linear_buffe"
+        app:pv_autostart="true"
+        app:pv_circular="false"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        app:pv_progressStyle="@style/LightQueryLinearProgressView"/>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_linear_buff"
+        app:pv_autostart="true"
+        app:pv_circular="false"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        app:pv_progressStyle="@style/LightBufferLinearProgressView"/>-->
+<!--
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_circular_inout_colors"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        android:layout_margin="10dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        app:v_styleId="@array/pv_circular_in_colors"/>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_circular_inout"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        android:layout_margin="10dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        app:v_styleId="@array/pv_circular_in"/>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_circular_colors"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        android:layout_margin="10dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        app:v_styleId="@array/pv_circular_colors"/>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/progress_pv_circular"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        android:layout_margin="10dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        app:v_styleId="@array/pv_circular"/>-->
+
+</LinearLayout>

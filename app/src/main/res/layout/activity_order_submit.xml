@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4effe039"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/label_activity_ordersubmit_message1"
+        android:id="@+id/message1"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/message2"
+        android:paddingBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:typeface="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/label_activity_ordersubmit_orderid"
+        android:id="@+id/message2"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/message3"
+        android:paddingBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:typeface="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/label_activity_ordersubmit_message2"
+        android:id="@+id/message3"
+        android:layout_above="@+id/button_order_submit_done"
+        android:paddingBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:typeface="monospace" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_order_submit_done"
+        android:text="@string/label_activity_ordersubmit_btn_done"
+        android:background="#e114a0cd"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:typeface="normal"
+        android:textSize="25sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"/>
+</RelativeLayout>

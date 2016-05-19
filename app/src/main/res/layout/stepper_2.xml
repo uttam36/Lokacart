@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/stepper_b"
+        android:scaleType="centerCrop"/>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/stepper_a_bg"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageRelativeLayout"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/groceries"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/stepper_a_font"
+            android:text="GROCERIES"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groceries"
+            android:textSize="20sp"
+            android:textColor="@color/stepper_a_font"
+            android:text="DAILY"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/stepper_a_image"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stepper_1"
+        android:textColor="@color/stepper_a_font2"
+        android:textSize="18sp"
+        android:layout_below="@+id/imageRelativeLayout"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>-->
+
+
+
+</RelativeLayout>

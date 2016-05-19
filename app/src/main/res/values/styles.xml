@@ -1,0 +1,149 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="alertDialogProTheme">@style/AppTheme.FlavoredMaterialLight</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CartTheme" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/cart_primary</item>
+        <item name="colorPrimaryDark">@color/cart_primary_dark</item>
+        <item name="colorAccent">@color/cart_accent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="ProductDetailsToolbarTheme" parent="AppTheme.PopupOverlay">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_menu_share</item>
+    </style>
+
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/black</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+    <style name="ToolbarRippleStyle" parent="Material.Drawable.Ripple.Touch.MatchView.Light">
+        <item name="rd_backgroundColor">@android:color/transparent</item>
+        <item name="rd_rippleColor">#33FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.FlavoredMaterialLight" parent="Theme.AlertDialogPro.Material.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTitleStyle">@style/AdpTitleStyle</item>
+        <item name="adpButtonBarNegativeButtonStyle">@style/AdpNormalButtonStyle</item>
+        <item name="adpButtonBarNeutralButtonStyle">@style/AdpNormalButtonStyle</item>
+    </style>
+
+    <style name="AdpTitleStyle" parent="DialogWindowTitle.AlertDialogPro.Material.Light">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AdpNormalButtonStyle" parent="Widget.AlertDialogPro.Material.Light.Button">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <array name="button_flat_wave_color">
+        <item>@style/LightFlatWaveColorButtonRippleStyle</item>
+        <item>@style/DarkFlatWaveColorButtonRippleStyle</item>
+    </array>
+
+    <array name="button_flat_color">
+        <item>@style/LightFlatColorButtonRippleStyle</item>
+        <item>@style/DarkFlatColorButtonRippleStyle</item>
+    </array>
+
+    <array name="button_flat">
+        <item>@style/LightFlatButtonRippleStyle</item>
+        <item>@style/DarkFlatButtonRippleStyle</item>
+    </array>
+
+    <array name="pv_circular">
+        <item>@style/LightCircularProgressView</item>
+        <item>@style/DarkCircularProgressView</item>
+    </array>
+
+    <array name="pv_circular_colors">
+        <item>@style/LightColorCircularProgressView</item>
+        <item>@style/DarkColorCircularProgressView</item>
+    </array>
+
+    <array name="pv_circular_in">
+        <item>@style/LightInCircularProgressView</item>
+        <item>@style/DarkInCircularProgressView</item>
+    </array>
+
+    <array name="pv_circular_in_colors">
+        <item>@style/LightInColorCircularProgressView</item>
+        <item>@style/DarkInColorCircularProgressView</item>
+    </array>
+
+    <array name="pv_circular_determinate">
+        <item>@style/LightDeterminateCircularProgressView</item>
+        <item>@style/DarkDeterminateCircularProgressView</item>
+    </array>
+
+    <array name="pv_circular_determinate_in">
+        <item>@style/LightDeterminateInCircularProgressView</item>
+        <item>@style/DarkDeterminateInCircularProgressView</item>
+    </array>
+
+    <array name="pv_linear">
+        <item>@style/LightLinearProgressView</item>
+        <item>@style/DarkLinearProgressView</item>
+    </array>
+
+    <array name="pv_linear_color">
+        <item>@style/LightColorLinearProgressView</item>
+        <item>@style/DarkColorLinearProgressView</item>
+    </array>
+
+    <array name="pv_linear_determinate">
+        <item>@style/LightDeterminateLinearProgressView</item>
+        <item>@style/DarkDeterminateLinearProgressView</item>
+    </array>
+
+    <array name="pv_linear_query">
+        <item>@style/LightQueryLinearProgressView</item>
+        <item>@style/DarkQueryLinearProgressView</item>
+    </array>
+
+    <array name="pv_linear_buffer">
+        <item>@style/LightBufferLinearProgressView</item>
+        <item>@style/DarkBufferLinearProgressView</item>
+    </array>
+
+
+</resources>

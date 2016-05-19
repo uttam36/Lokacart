@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    >
+
+   <!-- <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        />-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:text="Vegetable"
+                android:id="@+id/placed_order_quantityName"
+                android:gravity="left"
+                android:textColor="#7c7d7a"
+                android:fontFamily="sans-serif-light"
+
+
+                />
+
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+           <!-- <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10"
+                />-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Vegetable"
+                android:id="@+id/placed_order_quantityName"
+                android:fontFamily="sans-serif-light"
+                android:gravity="left"
+                android:ellipsize="marquee"
+                android:textColor="#7c7d7a"
+                />
+            <!-- <Space
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.10"
+                 />-->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Quantity"
+                android:id="@+id/placed_order_quantity"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#7c7d7a"
+
+                />
+            <!--    <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    />-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:text="Total"
+                android:gravity="right"
+                android:textColor="#7c7d7a"
+                android:id="@+id/placed_order_quantityTotalPrice"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+   <!-- <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        />-->
+</LinearLayout>

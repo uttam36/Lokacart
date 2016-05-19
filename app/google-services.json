@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "156702384436",
+    "project_id": "lokacart-5acc8"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156702384436:android:7b415a638a4c970a",
+        "android_client_info": {
+          "package_name": "com.mobile.ict.cart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5slG4SWj8jm1cVe809CJWjN9kg35Dmio"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

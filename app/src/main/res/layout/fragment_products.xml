@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/relativeLayout">
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/noDataRelativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivNoData"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/no_data_present"/>
+
+        &lt;!&ndash;<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_server_facing_problems"
+            android:layout_below="@+id/ivNoData"
+            android:textColor="@color/cart_primary_dark"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="25sp"/>&ndash;&gt;
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/noProductRelativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivNoProduct"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/no_data_present"/>
+
+        &lt;!&ndash;<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_server_facing_problems"
+            android:layout_below="@+id/ivNoProduct"
+            android:textColor="@color/cart_primary_dark"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textSize="25sp"/>&ndash;&gt;
+
+    </RelativeLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/ivNoProduct"
+        android:visibility="gone"
+        android:src="@mipmap/no_product"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivNoProduct"
+        android:text="@string/alert_no_products"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="25sp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tNoProduct"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_no_data_from_server"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tNoData"
+        android:textColor="@color/text_grey"/>
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tNoData"
+        android:id="@+id/ivNoData"
+        android:visibility="gone"
+        android:src="@mipmap/no_data_present"/>
+
+
+
+</RelativeLayout>

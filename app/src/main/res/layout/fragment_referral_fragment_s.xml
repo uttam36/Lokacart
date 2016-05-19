@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobile.ict.cart.fragment.ReferralFragmentSS">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Spinner
+        android:id="@+id/referra_org_spinner"
+        android:layout_width="fill_parent"
+        android:elevation="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/phonenumber_et"
+        android:minWidth="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+    <EditText
+        android:id="@+id/email_et"
+        android:minWidth="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refer"
+        android:id="@+id/refer_button"/>
+
+</LinearLayout>

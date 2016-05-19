@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="370dp"
+    android:paddingTop="24dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:background="#0e6a5d"
+    >
+
+    <TextView
+        android:textColor="#bdbcbc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have an issue?"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:fontFamily="sans-serif-medium"
+
+        android:layout_marginBottom="32dp"
+        android:textColor="#bdbcbc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FAQ_string"
+        android:id="@+id/faq_string_TV"
+        android:layout_gravity="center_horizontal"
+        android:textSize="35sp"
+        android:onClick=""/>
+    <TextView
+        android:textColor="#bdbcbc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:textColor="#bdbcbc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get in touch with us directly"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        >
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/call_us_iv"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/auricularphonesymbolinacircle"
+            />
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/facebook_iv"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/facebooklogoincircularbuttonoutlinedsocialsymbol"
+            />
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/mail_us_iv"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/newemailenvelopebacksymbolincircularoutlinedbutton"
+            />
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/website_iv"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/website_b"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="26dp"
+        android:textColor="#e7e5e5"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="close"
+        android:id="@+id/close_dailof_fragment_tv"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+</LinearLayout>
