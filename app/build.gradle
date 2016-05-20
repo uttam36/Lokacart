@@ -56,7 +56,6 @@ dependencies {
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
     // add this for intent mocking support
     androidTestCompile 'com.android.support.test.espresso:espresso-intents:2.2.2'
-   // androidTestCompile 'com.android.support.test.espresso:espresso-contrib:2.2.2'
 
     androidTestCompile ('com.android.support.test.espresso:espresso-contrib:2.2.2'){
         exclude group: 'com.android.support', module: 'appcompat-v7'

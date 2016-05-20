@@ -9,6 +9,7 @@ import android.support.test.espresso.ViewAssertion;
 import android.support.test.espresso.ViewInteraction;
 import android.support.test.rule.ActivityTestRule;
 
+import com.alertdialogpro.AlertDialogPro;
 import com.alertdialogpro.internal.AlertController;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mobile.ict.cart.Container.Organisations;
@@ -42,6 +43,8 @@ import java.util.concurrent.RecursiveAction;
 import java.util.concurrent.TimeUnit;
 
 import static android.support.test.espresso.Espresso.onView;
+
+import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.Espresso.onData;
 import static android.support.test.espresso.action.ViewActions.*;
 import static android.support.test.espresso.matcher.ViewMatchers.*;
@@ -52,7 +55,9 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static java.util.regex.Pattern.matches;
 import static org.hamcrest.CoreMatchers.anything;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.startsWith;
 import static org.hamcrest.Matchers.any;
+import static org.hamcrest.Matchers.hasToString;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.core.AllOf.allOf;
 
@@ -77,23 +82,17 @@ public class DashboardTest
     {
 
         int pos = -1;
-        int tog = 0;
         for(int i=0;i<Master.productList.size();i++)
         {
-            if(Master.productList.get(i).getStockEnabledStatus().equals("false"))
+            if(Master.productList.get(i).getStockQuantity()>0)
             {
                // onView(withId(R.id.ivBuy)).perform(click());
                 pos = i;
                 onView(withId(R.id.rvProduct)).perform(
-                        RecyclerViewActions.actionOnItemAtPosition(pos, MyViewAction.clickChildViewWithId(R.id.ivBuy)));
+                        RecyclerViewActions.actionOnItemAtPosition(i, MyViewAction.clickChildViewWithId(R.id.ivBuy)));
                 onView(withId(R.id.rvProduct)).perform(
-                        RecyclerViewActions.actionOnItemAtPosition(pos, MyViewAction.clickChildViewWithId(R.id.ivBuy)));
+                        RecyclerViewActions.actionOnItemAtPosition(i, MyViewAction.clickChildViewWithId(R.id.ivBuy)));
                // break;
-            }
-            else if(tog==0)
-            {
-                tog=(tog+1)%2;
-                onView(withId(R.id.rvProduct)).perform(swipeUp());
             }
             try {
                 TimeUnit.MILLISECONDS.sleep(500);
@@ -109,14 +108,15 @@ public class DashboardTest
     @Test
     public void RemoveFromCart()
     {
+        if(Master.cartList.isEmpty())
+            AddToCart();
         onView(withId(R.id.action_cart)).perform(click());
-        Master.cartList.remove(0);
-
-
-       // onView(withId(R.id.rvCart)).perform(
-       //         RecyclerViewActions.actionOnItemAtPosition(0, MyViewAction.clickChildViewWithId(R.id.bDelete)));
-        //onView(withText("ok")).perform(click());
-
+        for(int i=0;i<Master.cartList.size();i++)
+        {
+            onView(withId(R.id.rvCart)).perform(
+                    RecyclerViewActions.actionOnItemAtPosition(0, MyViewAction.clickChildViewWithId(R.id.bDelete)));
+            onView(withText("Ok")).perform(click());
+        }
 
     }
 
@@ -188,8 +188,6 @@ public class DashboardTest
     public void PlacedOrdersTest()
     {
 
-
-       // onView(withId(R.id.ivBuy)).perform(swipeRight());
         onView(withId(R.id.rvProduct)).perform(RecyclerViewActions.actionOnItemAtPosition(0,swipeRight()));
         onView(withText("Orders")).perform(click());
         onView(withText("Placed orders")).perform(click());
@@ -202,7 +200,11 @@ public class DashboardTest
                 e.printStackTrace();
             }
 
-            onView(withId(R.id.rvPlacedOrder)).perform(RecyclerViewActions.actionOnItemAtPosition(0,click()));
+            onView(withId(R.id.rvPlacedOrder)).perform(
+                RecyclerViewActions.actionOnItemAtPosition(0, MyViewAction.clickChildViewWithId(R.id.bDelete)));
+
+            onView(withText("Ok")).perform(click());
+
 
     }
 
@@ -248,7 +250,7 @@ public class DashboardTest
     {
         onView(withId(R.id.rvProduct)).perform(RecyclerViewActions.actionOnItemAtPosition(0,swipeRight()));
         try {
-            TimeUnit.MILLISECONDS.sleep(500);
+            TimeUnit.MILLISECONDS.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -256,13 +258,25 @@ public class DashboardTest
 
         /* Reffer to predefine Mobile number and Email Address */
 
+        onView(withId(R.id.referralRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(1,click()));
+        onView(withId(R.id.eReferralEmail)).perform(typeText("chaudharyuttam36@gmail.com"));
+       // onView(withId(R.id.bSendReferral)).perform(click());
+        onView(withId(R.id.eReferralMobileNumber)).perform(typeText("8140453507"));
+
+        try {
+            TimeUnit.MILLISECONDS.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        onView(withId(R.id.bSendReferral)).perform(click());
+        onView(withText(R.string.button_confirm)).perform(click());
 
     }
 
     @Test
     public void AboutUsTest()
     {
-        //onView(withId(R.id.ivBuy)).perform(swipeRight());
         onView(withId(R.id.rvProduct)).perform(RecyclerViewActions.actionOnItemAtPosition(0,swipeRight()));
         onView(withText("About us")).perform(click());
     }
@@ -352,6 +366,9 @@ public class DashboardTest
     @Test
     public void CartTest()
     {
+        if(Master.cartList.isEmpty())
+            AddToCart();
+
         onView(withId(R.id.action_cart)).perform(click());
         for(int i=0;i<Master.cartList.size();i++) {
             onView(withId(R.id.rvCart)).perform(
@@ -362,37 +379,71 @@ public class DashboardTest
             onView(withId(R.id.rvCart)).perform(
                     RecyclerViewActions.actionOnItemAtPosition(i, MyViewAction.clickChildViewWithId(R.id.bMinus)));
 
-            //   onView(withId(R.id.rvCart)).perform(
-            //         RecyclerViewActions.actionOnItemAtPosition(0, MyViewAction.clickChildViewWithId(R.id.bDelete)));
+
+
             try {
                 TimeUnit.MILLISECONDS.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+        onView(withText(startsWith("CheckOut"))).perform(click());
+        onView(withText("Done")).perform(click());
+
         // Delete "OK" need to be added
-
-
-
 
     }
 
+    /*@Test
+    public void AddLargeProducts()
+    {
+        onView(withId(R.id.action_cart)).perform(click());
+
+        for(int j=0;j<=1000;j++)
+            onView(withId(R.id.rvCart)).perform(
+                    RecyclerViewActions.actionOnItemAtPosition(0,MyViewAction.clickChildViewWithId(R.id.bPlus)));
+
+
+    } */
     @Test
     public void ProductTest()
     {
         //for finding availabel item
        int i=0;
+
         for(i=0;i<Master.productList.size();i++)
-            if(Master.productList.get(i).getQuantity()>0)
+        {
+            if(Master.productList.get(i).getStockQuantity()>0)
                 break;
+        }
 
         onView(withId(R.id.rvProduct)).perform(RecyclerViewActions.actionOnItemAtPosition(i,click()));
         try {
-            TimeUnit.MILLISECONDS.sleep(1500);
+            TimeUnit.MILLISECONDS.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         onView(withId(R.id.fab)).perform(click());
+        onView(withId(R.id.ivPlay)).perform(click());
+        try {
+            TimeUnit.MILLISECONDS.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        onView(withId(R.id.ivPause)).perform(click());
+        try {
+            TimeUnit.MILLISECONDS.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        onView(withId(R.id.ivPlay)).perform(click());
+        try {
+            TimeUnit.MILLISECONDS.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        onView(withId(R.id.ivStop)).perform(click());
+
 
     }
     @After

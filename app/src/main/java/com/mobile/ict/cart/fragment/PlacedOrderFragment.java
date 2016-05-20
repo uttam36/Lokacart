@@ -186,8 +186,8 @@ public class PlacedOrderFragment extends Fragment implements DeletePlacedOrderIn
             builder.setTitle(R.string.alert_No_Cancel_Orders_Found)
                     .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
-
-                            dialog.dismiss();
+                            dialog.dismiss()
+                            ;
                         }
                     });
 
